@@ -18,4 +18,8 @@ public class App
         return message;
     }
 
+    public static int sum(int a, int b) {
+      return a + b;
+    }
+
 }

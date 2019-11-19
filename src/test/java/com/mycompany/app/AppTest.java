@@ -30,14 +30,19 @@ public class AppTest
     }
 
     @Test
-    public void testAppMain()
-    {
+    public void testAppMain() {
         App.main(null);
         try {
             assertEquals("Hello World!" + System.getProperty("line.separator"), outContent.toString());
         } catch (AssertionError e) {
             fail("\"message\" is not \"Hello World!\"");
         }
+    }
+
+    @Test
+    public void testSum() {
+      int sum = App.sum(5, 6);
+      assertEquals(11, sum);
     }
 
     @After
