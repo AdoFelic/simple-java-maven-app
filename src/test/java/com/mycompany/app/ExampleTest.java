@@ -23,7 +23,7 @@ public class ExampleTest {
       Example test = new Example(testFirstName, testLastName, testAge);
       assertEquals(
         String.format(
-          "%s %s, d", testFirstName, testLastName, testAge),
+          "%s %s, %d", testFirstName, testLastName, testAge),
           test.showData()
       );
   }
